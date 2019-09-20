@@ -1,0 +1,22 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc ./learning/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nazmulb:M7gp7acP91G5@github.com/nazmulb/typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazmulb/typescript/issues"
+  },
+  "homepage": "https://github.com/nazmulb/typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
