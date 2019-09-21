@@ -1,0 +1,3 @@
+https://www.typescriptlang.org/docs/home.html
+https://www.tutorialspoint.com/typescript
+https://www.javatpoint.com/typescript-tutorial

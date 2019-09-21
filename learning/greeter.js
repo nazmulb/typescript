@@ -1,3 +1,6 @@
+/*
+*   Student Class
+*/
 var Student = /** @class */ (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
