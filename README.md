@@ -18,3 +18,13 @@ We use TypeScript because of the following benefits:
 - TypeScript make app development quick and easy as possible, and the tooling support of TypeScript gives us autocompletion, type checking, and source documentation.
 - TypeScript has a definition file with `.d.ts` extension to provide a definition for external JavaScript libraries like jQuery.
 - TypeScript gives all the benefits of ES6 plus more productivity.
+
+## Components of TypeScript:
+
+At its heart, TypeScript has the following three components:
+
+- **Language** − It comprises of the syntax, keywords, and type annotations.
+
+- **The TypeScript Compiler** − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.
+
+- **The TypeScript Language Service** − The "Language Service" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.
