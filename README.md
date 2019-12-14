@@ -4,6 +4,8 @@ TypeScript is pure object oriented with classes, interfaces and statically typed
 
 TypeScript is not directly run on the browser. It needs a compiler to compile and generate in JavaScript file. TypeScript is the ES6 version of JavaScript with some additional features.
 
+TypeScript uses TSC (TypeScript Compiler) compiler, which convert Typescript code (`.ts` file) to JavaScript (`.js` file).
+
 ## Why use TypeScript?
 
 We use TypeScript because of the following benefits:
@@ -14,5 +16,5 @@ We use TypeScript because of the following benefits:
 - TypeScript provides the error-checking feature at compilation time. It will compile the code, and if any error found, then it highlighted the mistakes before the script is run.
 - TypeScript supports all JavaScript libraries because it is the superset of JavaScript.
 - TypeScript make app development quick and easy as possible, and the tooling support of TypeScript gives us autocompletion, type checking, and source documentation.
-- TypeScript has a definition file with .d.ts extension to provide a definition for external JavaScript libraries like jQuery.
+- TypeScript has a definition file with `.d.ts` extension to provide a definition for external JavaScript libraries like jQuery.
 - TypeScript gives all the benefits of ES6 plus more productivity.
