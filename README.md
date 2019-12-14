@@ -28,3 +28,33 @@ At its heart, TypeScript has the following three components:
 - **The TypeScript Compiler** − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.
 
 - **The TypeScript Language Service** − The "Language Service" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.
+
+## Installing TypeScript:
+
+```cmd
+npm install -g typescript
+```
+
+### Building your first TypeScript file:
+
+In your editor, type the following JavaScript code in `greeter.ts`:
+
+```ts
+function greeter(person: string) {
+    return "Hello, " + person;
+}
+
+let user = "Jane User";
+
+console.log(greeter(user));
+```
+
+### Compiling your code:
+
+At the command line, run the TypeScript compiler:
+
+```cmd
+tsc greeter.ts
+```
+
+The result will be a file `greeter.js`. Now you can run using `node greeter.js`.
