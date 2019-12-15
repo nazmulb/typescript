@@ -37,7 +37,6 @@ console.dir(createSquare({width: 20}));
 console.dir(createSquare({width: 50, color: "yellow"}));
 
 // Readonly properties
-
 interface Point {
     readonly x: number;
     readonly y: number;
@@ -47,7 +46,6 @@ let p1: Point = {x: 10, y: 20};
 // p1.x = 30;
 
 // Function Types
-
 interface SearchFunc {
     (source: string, subString: string): boolean;
 }
@@ -61,3 +59,29 @@ mySearch = function(source: string, subString: string): boolean {
 }
 
 console.log(mySearch("My name is Nazmul", "name"));
+
+// Indexable Types
+interface StringArray {
+    [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Nazmul", "Basher"];
+
+console.log(myArray[1]);
+
+// Class Types
+interface ClockInterface {
+    currentTime: Date;
+    setTime(d: Date): void;
+}
+
+class Clock implements ClockInterface {
+    currentTime: Date = new Date();
+
+    setTime(d: Date): void {
+        this.currentTime = d;
+    }
+
+    constructor(h: number, m: number) {}
+}
