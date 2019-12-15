@@ -36,3 +36,8 @@ var Clock = /** @class */ (function () {
     };
     return Clock;
 }());
+var square = {};
+square.color = "white";
+square.penWidth = 10;
+square.sideLength = 5.0;
+console.dir(square);

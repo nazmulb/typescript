@@ -85,3 +85,23 @@ class Clock implements ClockInterface {
 
     constructor(h: number, m: number) {}
 }
+
+// Extending Interfaces
+interface Shape {
+    color: string;
+}
+
+interface PenStroke {
+    penWidth: number;
+}
+
+interface Square extends Shape, PenStroke {
+    sideLength: number;
+}
+
+let square = {} as Square;
+square.color = "white";
+square.penWidth = 10;
+square.sideLength = 5.0;
+
+console.dir(square);
