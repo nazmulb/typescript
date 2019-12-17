@@ -1,10 +1,10 @@
 // Array
-var color = ["Red", "Green", "Blue"];
-var list = [1, 2, 3];
+let color = ["Red", "Green", "Blue"];
+let list = [1, 2, 3];
 console.dir(color);
 // Tuple
-var x = ["Nazmul", 37];
-var y = ["Nazmul", 37, "Nabil", 10];
+let x = ["Nazmul", 37];
+let y = ["Nazmul", 37, "Nabil", 10];
 console.dir(y);
 // Enum
 var Color;
@@ -14,26 +14,26 @@ var Color;
     Color[Color["Yellow"] = 2] = "Yellow";
 })(Color || (Color = {}));
 ;
-var c = Color.Yellow;
-var colorName = Color[1];
+let c = Color.Yellow;
+let colorName = Color[1];
 console.log(c);
 console.log(colorName);
 // Any
-var notSure = 1;
+let notSure = 1;
 notSure = "This is string";
 notSure = true;
 console.log(notSure);
 // Array Any
-var list1 = ["Nazmul", 37, true];
+let list1 = ["Nazmul", 37, true];
 list1[2] = 12.56;
 list1[3] = false;
 console.dir(list1);
 // Void
-var unusable = undefined;
+let unusable = undefined;
 console.dir(typeof (unusable));
 unusable = null;
 console.dir(typeof (unusable));
 // Type assertions
-var someValue = "This is a test";
-var strLength = someValue.length;
+let someValue = "This is a test";
+let strLength = someValue.length;
 console.log(strLength);

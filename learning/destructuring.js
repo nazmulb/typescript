@@ -1,21 +1,20 @@
 // Array destructuring
-var input = [1, 2];
-var first = input[0], second = input[1];
+let input = [1, 2];
+let [first, second] = input;
 console.log(second);
-function f(_a) {
-    var first = _a[0], second = _a[1];
+function f([first, second]) {
     console.log(first);
 }
 f([5, 7]);
 // Object destructuring
-var obj = {
+let obj = {
     fname: "Nazmul",
     lname: "Basher",
     age: 37,
     city: "Dhaka"
 };
-var fname = obj.fname, age = obj.age;
+let { fname, age } = obj;
 console.log(age);
 // Property renaming
-var lastName = obj.lname, homeTown = obj.city;
+let { lname: lastName, city: homeTown } = obj;
 console.log(homeTown);

@@ -1,10 +1,10 @@
 function printLabel(labelObj) {
     console.log(labelObj.label);
 }
-var myObj = { size: 10, label: "Size 10 object" };
+let myObj = { size: 10, label: "Size 10 object" };
 printLabel(myObj);
 function createSquare(config) {
-    var newSquare = { color: "white", area: 100 };
+    let newSquare = { color: "white", area: 100 };
     if (config.color) {
         newSquare.color = config.color;
     }
@@ -17,26 +17,25 @@ console.dir(createSquare({ color: "balck" }));
 console.dir(createSquare({}));
 console.dir(createSquare({ width: 20 }));
 console.dir(createSquare({ width: 50, color: "yellow" }));
-var p1 = { x: 10, y: 20 };
-var mySearch;
+let p1 = { x: 10, y: 20 };
+let mySearch;
 mySearch = function (source, subString) {
-    var result = source.search(subString);
+    let result = source.search(subString);
     return result > -1;
 };
 console.log(mySearch("My name is Nazmul", "name"));
-var myArray;
+let myArray;
 myArray = ["Nazmul", "Basher"];
 console.log(myArray[1]);
-var Clock = /** @class */ (function () {
-    function Clock(h, m) {
+class Clock {
+    constructor(h, m) {
         this.currentTime = new Date();
     }
-    Clock.prototype.setTime = function (d) {
+    setTime(d) {
         this.currentTime = d;
-    };
-    return Clock;
-}());
-var square = {};
+    }
+}
+let square = {};
 square.color = "white";
 square.penWidth = 10;
 square.sideLength = 5.0;

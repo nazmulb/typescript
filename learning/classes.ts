@@ -70,3 +70,62 @@ let emp = new Employee("Nazmul", "Software Engineering");
 console.log(emp.getElevatorPitch());
 // console.log(emp.name); // error
 // let m1 = new Man("Basher"); // error: The 'Man' constructor is protected
+
+// Accessors
+const fullNameMaxLength = 20;
+
+class Employees {
+    private _fullName: string;
+
+    get fullName(): string {
+        return this._fullName;
+    }
+
+    set fullName(newName: string) {
+        if(newName && newName.length > fullNameMaxLength) {
+            throw new Error(`fullName has a max length of ${fullNameMaxLength}`);
+        }
+        
+        this._fullName = newName;
+    }
+}
+
+let emp1 = new Employees();
+emp1.fullName = "Nazmul Basher";
+if(emp1.fullName) {
+    console.log(emp1.fullName);
+}
+
+// Abstract Classes
+abstract class Department {
+    constructor(public name: string) {
+
+    }
+
+    printName(): void {
+        console.log(`Department name: ${this.name}`);
+    }
+
+    abstract printMeeting(): void;
+} 
+
+class AccointingDepartment extends Department {
+    constructor() {
+        super("Accounting and Auditing");
+    }
+
+    printMeeting(): void {
+        console.log("The Accounting Department meets each Monday at 10am.");
+    }
+
+    generateReports(): void {
+        console.log("Generating accounting reports...");
+    }
+}
+
+let dept: Department;
+// dept = new Department(); // error: cannot create an instance of an abstract class
+dept = new AccointingDepartment();
+dept.printName();
+dept.printMeeting();
+// dept.generateReports(); // error: method doesn't exist on declared abstract type
