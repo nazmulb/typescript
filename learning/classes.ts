@@ -48,7 +48,7 @@ tom.move(34);
 // Understanding protected
 class Man {
     protected name: string;
-    constructor(name: string) {
+    protected constructor(name: string) {
         this.name = name;
     }
 }
@@ -69,3 +69,4 @@ class Employee extends Man {
 let emp = new Employee("Nazmul", "Software Engineering");
 console.log(emp.getElevatorPitch());
 // console.log(emp.name); // error
+// let m1 = new Man("Basher"); // error: The 'Man' constructor is protected

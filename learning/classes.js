@@ -83,3 +83,4 @@ var Employee = /** @class */ (function (_super) {
 var emp = new Employee("Nazmul", "Software Engineering");
 console.log(emp.getElevatorPitch());
 // console.log(emp.name); // error
+// let m1 = new Man("Basher"); // error: The 'Man' constructor is protected
