@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "./node_modules/.bin/tsc --module commonjs --target ES2016 ./learning/**/*.ts"
+    "build": "./node_modules/.bin/tsc --module commonjs --target ES2016 --experimentalDecorators ./learning/**/*.ts"
   },
   "repository": {
     "type": "git",
