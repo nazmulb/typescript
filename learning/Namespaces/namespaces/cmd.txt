@@ -1,0 +1,1 @@
+../../../node_modules/.bin/tsc --outFile sample.js Test.ts
